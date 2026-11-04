@@ -8,14 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap site-head__inner">
-    <a class="brand" href="index.html">Mickey Chapple <span>· Finance</span></a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">MC</span>
+      <span class="brand__name">Mickey Chapple</span>
+    </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav">
       <a href="index.html">Home</a>
@@ -31,15 +35,41 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">The Evolution · Identity, brand and reputation</p>
-      <h1 class="hero__lede">I rated myself a perfect zero. Nine people disagreed.</h1>
-      <p class="hero__sub">
-        This semester I ran two instruments on myself: one measuring how I see me, one
-        measuring how people who have actually worked with me see me. I expected them to
-        roughly agree. <strong>They were six points apart</strong>, and the distance between
-        them turned out to be the most useful thing I learned all year.
-      </p>
+    <div class="wrap hero__top">
+      <div class="hero__copy">
+        <p class="eyebrow">The Evolution · Identity, brand and reputation</p>
+        <h1 class="hero__lede">I rated myself a perfect zero. Nine people disagreed.</h1>
+        <p class="hero__sub">
+          This semester I ran two instruments on myself: one measuring how I see me, one
+          measuring how people who have actually worked with me see me. I expected them to
+          roughly agree. <strong>They were six points apart</strong>, and the distance between
+          them turned out to be the most useful thing I learned all year.
+        </p>
+      </div>
+
+      <aside class="gap-card">
+        <p class="gap-card__head">Proactivity score</p>
+
+        <div class="gap-card__row">
+          <span class="gap-card__label">How I see me</span>
+          <span class="gap-card__num">0.0</span>
+          <span class="gap-card__sub">Balanced / Neutral</span>
+        </div>
+
+        <div class="gap-card__link" aria-hidden="true">
+          <span>6.1 apart</span>
+        </div>
+
+        <div class="gap-card__row gap-card__row--them">
+          <span class="gap-card__label">How nine colleagues do</span>
+          <span class="gap-card__num">6.1</span>
+          <span class="gap-card__sub">Expressive</span>
+        </div>
+
+        <p class="gap-card__foot">
+          Self-Perception Inventory vs. Professional Reputation Survey · n&nbsp;=&nbsp;9
+        </p>
+      </aside>
     </div>
   </section>
 
@@ -311,9 +341,14 @@
             not aspirational.
           </p>
           <ul>
-            <li><strong>Ask before I answer.</strong> In any group decision, I solicit two
-              other views before I give mine. If I speak first, I have removed the option
-              of disagreement from people who already defer to me.</li>
+            <li><strong>Ask before I answer.</strong> On the five-person consulting team
+              I worked on this semester I ended up mediating most of our discussions —
+              holding the thread, making sure each person's view was actually on the table
+              before we converged on anything. Running those conversations is what exposed
+              the problem: you cannot mediate a discussion and also be the loudest voice in
+              it. In any group decision now I solicit two other views before I give mine.
+              If I speak first, I have removed the option of disagreement from people who
+              already defer to me.</li>
             <li><strong>Label the confidence.</strong> I now say explicitly whether I am
               thinking out loud or making a recommendation. Respondents could not tell the
               difference, which meant a half-formed thought was landing as a verdict.</li>
@@ -363,15 +398,14 @@
         </p>
         <p>
           What the data changed is how I intend to spend the next stretch. I came into this
-          semester believing my job was to be more assertive. I am leaving it understanding
-          that assertiveness was never my constraint — <strong>calibration</strong> was.
-          Knowing when the room needs my judgment and when it needs my silence is a harder
-          skill than having the judgment, and it is the one that separates an analyst who is
-          useful from one who is trusted.
+          semester believing my job was to be more assertive. I am leaving it thinking
+          assertiveness was never my constraint — <strong>calibration</strong> was. Knowing
+          when a room needs my opinion and when it needs me to be quiet is the harder half,
+          and it is the half I have been getting wrong without noticing.
         </p>
         <p>
-          That is the version of myself I am building toward, and it is the reason a client
-          conversation interests me more than a screen full of models ever has.
+          That is what I am working on at the moment, and it is a large part of why the
+          client side of this work appeals to me more than a screen full of models.
         </p>
         <div class="btn-row" style="margin-top:26px">
           <a class="btn" href="portfolio.html">See the work</a>
@@ -379,12 +413,16 @@
         </div>
       </div>
       <div class="prose">
-        <h3>What I'd want a manager to take from this</h3>
-        <ul>
-          <li>I will go looking for the feedback rather than waiting for the review cycle.</li>
-          <li>When it is unflattering, I publish it rather than bury it — this page is the proof.</li>
-          <li>I convert it into specific behaviour, not a resolution to "do better."</li>
-        </ul>
+        <h3>Why this page exists</h3>
+        <p>
+          It would have been easy to put the scores up, call the gap a strength and move on.
+          I left the unflattering comments in because the page is useless without them —
+          the finding only means anything if you can see what it was based on.
+        </p>
+        <p>
+          I would rather be someone who goes and asks for this than someone who waits for a
+          review cycle to deliver it.
+        </p>
       </div>
     </div>
   </section>
@@ -418,6 +456,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=9"></script>
 </body>
 </html>

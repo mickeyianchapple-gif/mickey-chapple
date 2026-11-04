@@ -8,14 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap site-head__inner">
-    <a class="brand" href="index.html">Mickey Chapple <span>· Finance</span></a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">MC</span>
+      <span class="brand__name">Mickey Chapple</span>
+    </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav">
       <a href="index.html">Home</a>
@@ -30,61 +34,17 @@
 <main id="main">
 
   <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Contact</p>
-      <h1 class="hero__lede">The fastest way to reach me is the obvious one.</h1>
-      <p class="hero__sub">
-        Use whichever of these you prefer — the form goes straight to my inbox, and so does
-        the email address. I reply to everything.
-      </p>
-    </div>
-  </section>
-
-  <section class="rule-top">
-    <div class="wrap split">
-
-      <!-- FORM -->
-      <div>
-        <h2 style="font-size:26px;margin-bottom:8px">Send a message</h2>
-        <p style="color:var(--muted);font-size:15px;margin-bottom:26px">
-          Goes directly to my university inbox.
+    <div class="wrap hero__top">
+      <div class="hero__copy">
+        <p class="eyebrow">Contact</p>
+        <h1 class="hero__lede">Reach out. I answer.</h1>
+        <p class="hero__sub">
+          The form below goes straight to my inbox, and so does the email address — use
+          whichever you prefer. No assistant, no filter, no message left sitting.
         </p>
-
-        <form class="form" action="https://api.web3forms.com/submit" method="POST">
-          <!-- TODO: replace with Mickey's Web3Forms access key -->
-          <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
-          <input type="hidden" name="subject" value="New message from your website">
-          <input type="hidden" name="from_name" value="mickeychapple.com">
-          <!-- honeypot -->
-          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
-
-          <div class="field">
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" required autocomplete="name">
-          </div>
-
-          <div class="field">
-            <label for="email">Your email</label>
-            <input id="email" name="email" type="email" required autocomplete="email">
-          </div>
-
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-          </div>
-
-          <button class="btn" type="submit">Send message</button>
-          <p class="form__note" role="status"></p>
-        </form>
       </div>
 
-      <!-- DIRECT -->
-      <div>
-        <h2 style="font-size:26px;margin-bottom:8px">Or go direct</h2>
-        <p style="color:var(--muted);font-size:15px;margin-bottom:26px">
-          No form, no middleman.
-        </p>
-
+      <aside>
         <ul class="direct">
           <li>
             <span class="direct__k">Email</span>
@@ -100,16 +60,47 @@
           </li>
         </ul>
 
-        <div class="callout" style="margin-top:34px">
-          <p>
-            <strong>If you are hiring:</strong> my resume is
-            <a href="assets/Mickey Chapple Resume.pdf" download>downloadable here</a>,
-            and the <a href="portfolio.html">portfolio</a> has the reasoning behind each
-            piece of work rather than just the files.
-          </p>
+        <div class="btn-row" style="margin-top:26px">
+          <a class="btn btn--ghost" href="assets/Mickey Chapple Resume.pdf" download>My resume</a>
+          <a class="btn btn--ghost" href="portfolio.html">My portfolio</a>
         </div>
-      </div>
+      </aside>
+    </div>
+  </section>
 
+  <section class="rule-top">
+    <div class="wrap wrap--narrow">
+      <h2 style="font-size:28px;margin-bottom:8px">Send a message</h2>
+      <p style="color:var(--muted);font-size:15px;margin-bottom:28px">
+        Goes directly to my university inbox.
+      </p>
+
+      <form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- TODO: replace with Mickey's Web3Forms access key -->
+        <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="New message from your website">
+        <input type="hidden" name="from_name" value="Mickey Chapple website">
+        <!-- honeypot -->
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+        </div>
+
+        <div class="field">
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send message</button>
+        <p class="form__note" role="status"></p>
+      </form>
     </div>
   </section>
 
@@ -142,7 +133,7 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
-<script src="contact.js"></script>
+<script src="script.js?v=9"></script>
+<script src="contact.js?v=9"></script>
 </body>
 </html>

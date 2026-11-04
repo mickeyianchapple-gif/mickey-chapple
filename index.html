@@ -4,18 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mickey Chapple — Finance, Eller College</title>
-<meta name="description" content="Finance major at the University of Arizona's Eller College. Former semi-professional center back. A professional persona profile built around one chart.">
+<meta name="description" content="Finance major at the University of Arizona's Eller College and an incoming J.P. Morgan Private Bank summer analyst. A professional persona profile built around one chart.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap site-head__inner">
-    <a class="brand" href="index.html">Mickey Chapple <span>· Finance</span></a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">MC</span>
+      <span class="brand__name">Mickey Chapple</span>
+    </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav">
       <a href="index.html" aria-current="page">Home</a>
@@ -30,73 +34,87 @@
 <main id="main">
 
   <!-- ================= HERO ================= -->
-  <section class="hero">
+  <section class="hero hero--full">
     <div class="wrap">
-      <p class="eyebrow">Finance · Eller College of Management · Class of 2028</p>
+      <div class="hero__top">
+        <div class="hero__copy">
+          <p class="eyebrow">Finance · Eller College of Management · Class of 2028</p>
 
-      <h1 class="hero__lede">Most advisors learn what a drawdown feels like from a client.</h1>
+          <h1 class="hero__lede">Mickey Chapple</h1>
 
-      <p class="hero__sub">
-        I learned it from the inside. I'm <strong>Mickey Chapple</strong> — a finance major at
-        the University of Arizona and a former semi-professional center back. The chart below
-        is not a security. It's the last six years of my life, and the part that matters most
-        is the flat stretch at the bottom.
-      </p>
+          <p class="hero__sub">
+            Finance major at the University of Arizona and an incoming summer analyst at
+            J.P. Morgan Private Bank. The chart below is the last six years of my life —
+            the part that matters most is the flat stretch at the bottom.
+          </p>
 
-      <div class="btn-row">
-        <a class="btn" href="evolution.html">See how it recovered</a>
-        <a class="btn btn--ghost" href="about.html">About me</a>
+          <div class="btn-row">
+            <a class="btn" href="evolution.html">See how it recovered</a>
+            <a class="btn btn--ghost" href="about.html">About me</a>
+          </div>
+        </div>
+
+        <figure class="hero__portrait">
+          <img src="assets/headshot.jpg" width="1121" height="1403"
+               alt="Mickey Chapple, wearing a dark suit and green tie.">
+          <figcaption>
+            Tucson, Arizona<br>
+            <a href="mailto:mickeychapple@arizona.edu">mickeychapple@arizona.edu</a>
+          </figcaption>
+        </figure>
       </div>
 
+      <a class="scroll-cue" href="#curve" aria-label="Scroll to the chart">
+        <span>The last six years</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M12 4v15m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor"
+                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section id="curve" class="rule-top">
+    <div class="wrap">
       <!-- ================= THE DRAWDOWN ================= -->
       <figure class="chart-frame">
         <figcaption class="chart-frame__head">
           <span class="chart-frame__title">Chapple, M. — Personal Equity Curve</span>
           <span class="chart-frame__note">2020 – Present · indexed to 100</span>
         </figcaption>
-
         <svg class="chart" viewBox="0 0 1000 360" role="img"
              aria-label="A line chart of Mickey Chapple's life from 2020 to today. The line climbs through youth and semi-professional soccer to a peak at his first professional game, falls forty percent at a career-ending injury, runs flat through recovery, then climbs steadily back through his finance coursework and certifications to a new high today.">
-
           <!-- horizontal grid -->
           <line class="grid" x1="40" y1="60"  x2="965" y2="60"></line>
           <line class="grid" x1="40" y1="140" x2="965" y2="140"></line>
           <line class="grid" x1="40" y1="220" x2="965" y2="220"></line>
           <line class="grid" x1="40" y1="300" x2="965" y2="300"></line>
-
           <!-- prior peak reference -->
           <line class="peak-line" x1="330" y1="100" x2="965" y2="100"></line>
           <text class="peak-label marker marker--now" x="840" y="92">PRIOR HIGH</text>
-
           <!-- 1. the climb -->
           <path class="series series--up" pathLength="1"
                 d="M 45 268 C 110 258, 150 236, 190 212 S 262 150, 330 100"></path>
-
           <!-- 2. the crash -->
           <path class="series series--down" pathLength="1"
                 d="M 330 100 L 352 142 L 368 128 L 398 206 L 425 244"></path>
-
           <!-- 3. the flat -->
           <path class="series series--flat" pathLength="1"
                 d="M 425 244 L 530 247"></path>
-
           <!-- 4. the climb back -->
           <path class="series series--back" pathLength="1"
                 d="M 530 247 C 600 240, 650 212, 700 180 S 820 120, 900 72 L 958 52"></path>
-
           <!-- the loss -->
           <g class="marker marker--loss">
             <circle cx="425" cy="244" r="4" fill="#C2402F"></circle>
             <text class="label-loss" x="437" y="276">&#8722;40%</text>
             <text class="loss-sub" x="437" y="296">THE INJURY</text>
           </g>
-
           <!-- today -->
           <g class="marker marker--now">
             <circle cx="958" cy="52" r="4" fill="#1168B8"></circle>
             <text class="label-now" x="950" y="34" text-anchor="end">TODAY</text>
           </g>
-
           <!-- x axis -->
           <line class="grid" x1="40" y1="330" x2="965" y2="330"></line>
           <text class="x-end" x="45"  y="350">2020</text>
@@ -104,7 +122,6 @@
           <text class="x-mid" x="470" y="350">THE DECISION</text>
           <text class="x-end" x="915" y="350">2026</text>
         </svg>
-
         <div class="chart-legend">
           <span class="legend--climb"><i></i> The climb</span>
           <span class="legend--loss"><i></i> The drawdown</span>
@@ -112,6 +129,7 @@
           <span class="legend--back"><i></i> Reallocation</span>
         </div>
       </figure>
+    </div>
     </div>
   </section>
 
@@ -146,8 +164,8 @@
       <div class="sec-head">
         <h2>Three ways in</h2>
         <p>
-          A resume tells you whether I can do the job. These tell you whether you want
-          to work with me.
+          The resume covers what I have done. These cover how I think, and what I am
+          still working on.
         </p>
       </div>
 
@@ -164,10 +182,10 @@
 
         <a class="door" href="portfolio.html">
           <div class="door__num">02</div>
-          <div class="door__title">Work that survives a second look</div>
+          <div class="door__title">The work, and why I made it</div>
           <p class="door__body">
-            Client communication strategy, capital markets research and a fund built from
-            nothing — with the reasoning behind each one, not just the artifact.
+            Market research, an equity pitch and a client communication plan — with the
+            thinking behind each one, not just the file.
           </p>
           <span class="door__cue">The portfolio</span>
         </a>
@@ -195,15 +213,15 @@
       <div class="prose">
         <h3>Why temperament, and not just numbers</h3>
         <p>
-          Technical skill is table stakes in this industry and it is teachable. Composure
-          under a real loss is neither. I spent four years building toward one outcome,
-          lost it in a single afternoon, and spent the months afterward deciding what to do
-          with the capital I had left.
+          I spent fourteen years building toward one outcome, lost it in a single afternoon,
+          and spent the months afterward working out what to do with what I had left. I
+          am not going to claim that taught me more than a career does. But it did teach
+          me something about my own reaction to a bad number, and I would rather have
+          learned it then than on someone else's account.
         </p>
         <p>
-          That is the same decision a client makes in a bad year, and it is the reason I
-          chose wealth management rather than a desk further from the people whose money
-          it is.
+          It is also why the client side of this industry interests me more than the
+          parts further from the people whose money it is.
         </p>
         <a class="btn btn--ghost" href="evolution.html">Read the full arc</a>
       </div>
@@ -239,6 +257,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=9"></script>
 </body>
 </html>

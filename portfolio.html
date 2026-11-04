@@ -8,14 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap site-head__inner">
-    <a class="brand" href="index.html">Mickey Chapple <span>· Finance</span></a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">MC</span>
+      <span class="brand__name">Mickey Chapple</span>
+    </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav">
       <a href="index.html">Home</a>
@@ -30,14 +34,26 @@
 <main id="main">
 
   <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Portfolio · Four pieces</p>
-      <h1 class="hero__lede">Anyone can attach a PDF. The reasoning is the work.</h1>
-      <p class="hero__sub">
-        For each piece below: why it exists, what it demonstrates, and why that should
-        matter to someone deciding whether to put a client in front of me. Authorship is
-        stated plainly — where a piece was collaborative, my specific contribution is named.
-      </p>
+    <div class="wrap hero__top">
+      <div class="hero__copy">
+        <p class="eyebrow">Portfolio · Four pieces</p>
+        <h1 class="hero__lede">The files, and the thinking behind them.</h1>
+        <p class="hero__sub">
+          For each piece below: why it exists, what it demonstrates, and why I think that
+          is relevant. Authorship is stated plainly — where a piece was collaborative, my
+          specific contribution is named.
+        </p>
+      </div>
+
+      <nav class="toc" aria-label="Portfolio contents">
+        <p class="toc__head">In this portfolio</p>
+        <ol>
+          <li><a href="#outlook"><span class="toc__n">01</span><span class="toc__t">2026 Global Market Outlook</span><span class="toc__m">Sole author</span></a></li>
+          <li><a href="#carrier"><span class="toc__n">02</span><span class="toc__t">Carrier Global (CARR) — Long</span><span class="toc__m">Sole author</span></a></li>
+          <li><a href="#coleman"><span class="toc__n">03</span><span class="toc__t">Coleman Communication Plan</span><span class="toc__m">Team of five</span></a></li>
+          <li><a href="#video"><span class="toc__n">04</span><span class="toc__t">Professional Persona Video</span><span class="toc__m">Sole author</span></a></li>
+        </ol>
+      </nav>
     </div>
   </section>
 
@@ -48,11 +64,17 @@
         <div class="work__head">
           <div>
             <p class="eyebrow eyebrow--gold">01 · Sole author</p>
-            <h2>2026 Global Market Outlook</h2>
+            <h2 id="outlook">2026 Global Market Outlook</h2>
             <p class="work__tagline">A three-page house view across equities, commodities, fixed income and emerging markets.</p>
           </div>
           <a class="btn" href="assets/Global Market Outlook 2026.pdf" target="_blank" rel="noopener">Read the outlook</a>
         </div>
+
+        <a class="doc-preview" href="assets/Global Market Outlook 2026.pdf" target="_blank" rel="noopener">
+          <img src="assets/outlook-preview.png" width="1347" height="1743"
+               alt="First page of the 2026 Global Market Outlook, headed Overview, with sections on equities and a bullish call on industrials.">
+          <span class="doc-preview__tag">Page 1 of 3 · Open the PDF</span>
+        </a>
 
         <div class="cer">
           <div class="cer__item">
@@ -79,11 +101,10 @@
           <div class="cer__item">
             <h3>Reasoning</h3>
             <p>
-              Private banking is not a stock-picking job. It is the job of explaining to
-              somebody why their portfolio is positioned the way it is, in language they
-              can act on, when the news is frightening. This piece is the closest thing I
-              have to a rehearsal for that conversation — and it names its own biggest
-              risk, stagflation, rather than burying it.
+              Writing it was the closest I have come to rehearsing the conversation I
+              actually want to be in — explaining to someone, in language they can act on,
+              why their portfolio is positioned the way it is. I also made myself name the
+              thing that would break the whole view, stagflation, in the same document.
             </p>
           </div>
         </div>
@@ -98,7 +119,7 @@
         <div class="work__head">
           <div>
             <p class="eyebrow eyebrow--gold">02 · Sole author</p>
-            <h2>Carrier Global (NYSE: CARR) — Long</h2>
+            <h2 id="carrier">Carrier Global (NYSE: CARR) — Long</h2>
             <p class="work__tagline">A one-page equity pitch with a 12-month target of $66.92, roughly 23% upside.</p>
           </div>
           <a class="btn" href="assets/Carrier Global Equity Pitch.pdf" target="_blank" rel="noopener">Read the pitch</a>
@@ -112,13 +133,19 @@
           <div class="tear__cell"><span class="tear__k">Method</span><span class="tear__v">23.9x FY26E EPS</span></div>
         </div>
 
+        <a class="doc-preview doc-preview--wide" href="assets/Carrier Global Equity Pitch.pdf" target="_blank" rel="noopener">
+          <img src="assets/carrier-preview.png" width="2112" height="1188"
+               alt="The one-page Carrier Global equity pitch, showing the sales thesis, three catalysts, the risk, and the target price of 66.92 dollars.">
+          <span class="doc-preview__tag">One page · Open the PDF</span>
+        </a>
+
         <div class="cer">
           <div class="cer__item">
             <h3>Context</h3>
             <p>
               Built as a complete investment recommendation — thesis, catalysts, valuation
-              methodology and the risk that breaks it — constrained to a single page,
-              because the people who approve these do not read four.
+              methodology and the risk that breaks it — and deliberately held to a single
+              page, which was the hard part.
             </p>
           </div>
           <div class="cer__item">
@@ -136,9 +163,9 @@
             <h3>Reasoning</h3>
             <p>
               The pitch states its own kill condition — residential HVAC demand staying
-              suppressed longer than expected. That is the habit I would want a manager to
-              see. An analyst who can only argue one side of their own idea is not giving
-              you research; they are giving you a position they have already taken.
+              suppressed longer than expected. I put it in because I found I could not
+              argue the other side convincingly until I wrote it down, and I would rather
+              know that about an idea before someone else points it out.
             </p>
           </div>
         </div>
@@ -153,7 +180,7 @@
         <div class="work__head">
           <div>
             <p class="eyebrow eyebrow--gold">03 · Team of five — my contribution named below</p>
-            <h2>Coleman: Client Communication Plan</h2>
+            <h2 id="coleman">Coleman: Client Communication Plan</h2>
             <p class="work__tagline">A 20-minute consulting recommendation delivered in SBAR format to a client's communication director.</p>
           </div>
         </div>
@@ -194,10 +221,10 @@
           <div class="cer__item">
             <h3>Reasoning</h3>
             <p>
-              Opening is the position I would choose. It is the only slot where you can
-              lose the room permanently, and it requires saying the uncomfortable thing —
-              <em>here is your 1.7 stars</em> — to a client in a way that makes them lean in
-              rather than defend. That is a client-facing skill, not a slide-making one.
+              I asked for the opening slot. It meant being the one to say the
+              uncomfortable thing — <em>here is your 1.7 stars</em> — to a client, early,
+              and trying to do it in a way that made them lean in rather than defend. That
+              is the part of the work I want more of.
             </p>
           </div>
         </div>
@@ -212,7 +239,7 @@
         <div class="work__head">
           <div>
             <p class="eyebrow eyebrow--gold">04 · Sole author</p>
-            <h2>Professional Persona Video</h2>
+            <h2 id="video">Professional Persona Video</h2>
             <p class="work__tagline">A two-minute non-linear narrative built on a single visual metaphor.</p>
           </div>
           <a class="btn btn--ghost" href="evolution.html">Watch it</a>
@@ -241,10 +268,9 @@
           <div class="cer__item">
             <h3>Reasoning</h3>
             <p>
-              Choosing what to leave out is the entire discipline of client communication.
-              A video that explains its own metaphor is a video that does not trust its
-              audience — and the same instinct that over-explains a film over-explains a
-              portfolio review.
+              Most of my early cuts were me explaining the metaphor out loud. Taking that
+              narration out was the single biggest improvement, and it is the note I now
+              try to apply to everything I write.
             </p>
           </div>
         </div>
@@ -294,6 +320,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=9"></script>
 </body>
 </html>
