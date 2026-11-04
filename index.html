@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mickey Chapple — Finance, Eller College</title>
+<meta name="description" content="Finance major at the University of Arizona's Eller College. Former semi-professional center back. A professional persona profile built around one chart.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__inner">
+    <a class="brand" href="index.html">Mickey Chapple <span>· Finance</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="evolution.html">The Evolution</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Finance · Eller College of Management · Class of 2028</p>
+
+      <h1 class="hero__lede">Most advisors learn what a drawdown feels like from a client.</h1>
+
+      <p class="hero__sub">
+        I learned it from the inside. I'm <strong>Mickey Chapple</strong> — a finance major at
+        the University of Arizona and a former semi-professional center back. The chart below
+        is not a security. It's the last six years of my life, and the part that matters most
+        is the flat stretch at the bottom.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn" href="evolution.html">See how it recovered</a>
+        <a class="btn btn--ghost" href="about.html">About me</a>
+      </div>
+
+      <!-- ================= THE DRAWDOWN ================= -->
+      <figure class="chart-frame">
+        <figcaption class="chart-frame__head">
+          <span class="chart-frame__title">Chapple, M. — Personal Equity Curve</span>
+          <span class="chart-frame__note">2020 – Present · indexed to 100</span>
+        </figcaption>
+
+        <svg class="chart" viewBox="0 0 1000 360" role="img"
+             aria-label="A line chart of Mickey Chapple's life from 2020 to today. The line climbs through youth and semi-professional soccer to a peak at his first professional game, falls forty percent at a career-ending injury, runs flat through recovery, then climbs steadily back through his finance coursework and certifications to a new high today.">
+
+          <!-- horizontal grid -->
+          <line class="grid" x1="40" y1="60"  x2="965" y2="60"></line>
+          <line class="grid" x1="40" y1="140" x2="965" y2="140"></line>
+          <line class="grid" x1="40" y1="220" x2="965" y2="220"></line>
+          <line class="grid" x1="40" y1="300" x2="965" y2="300"></line>
+
+          <!-- prior peak reference -->
+          <line class="peak-line" x1="330" y1="100" x2="965" y2="100"></line>
+          <text class="peak-label marker marker--now" x="840" y="92">PRIOR HIGH</text>
+
+          <!-- 1. the climb -->
+          <path class="series series--up" pathLength="1"
+                d="M 45 268 C 110 258, 150 236, 190 212 S 262 150, 330 100"></path>
+
+          <!-- 2. the crash -->
+          <path class="series series--down" pathLength="1"
+                d="M 330 100 L 352 142 L 368 128 L 398 206 L 425 244"></path>
+
+          <!-- 3. the flat -->
+          <path class="series series--flat" pathLength="1"
+                d="M 425 244 L 530 247"></path>
+
+          <!-- 4. the climb back -->
+          <path class="series series--back" pathLength="1"
+                d="M 530 247 C 600 240, 650 212, 700 180 S 820 120, 900 72 L 958 52"></path>
+
+          <!-- the loss -->
+          <g class="marker marker--loss">
+            <circle cx="425" cy="244" r="4" fill="#C2402F"></circle>
+            <text class="label-loss" x="437" y="276">&#8722;40%</text>
+            <text class="loss-sub" x="437" y="296">THE INJURY</text>
+          </g>
+
+          <!-- today -->
+          <g class="marker marker--now">
+            <circle cx="958" cy="52" r="4" fill="#1168B8"></circle>
+            <text class="label-now" x="950" y="34" text-anchor="end">TODAY</text>
+          </g>
+
+          <!-- x axis -->
+          <line class="grid" x1="40" y1="330" x2="965" y2="330"></line>
+          <text class="x-end" x="45"  y="350">2020</text>
+          <text class="x-mid" x="286" y="350">FIRST PRO GAME</text>
+          <text class="x-mid" x="470" y="350">THE DECISION</text>
+          <text class="x-end" x="915" y="350">2026</text>
+        </svg>
+
+        <div class="chart-legend">
+          <span class="legend--climb"><i></i> The climb</span>
+          <span class="legend--loss"><i></i> The drawdown</span>
+          <span class="legend--flat"><i></i> The flat</span>
+          <span class="legend--back"><i></i> Reallocation</span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="rule-top">
+    <div class="wrap">
+      <p class="eyebrow">Where the line is now</p>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__num">4.0</div>
+          <p class="stat__label">Cumulative GPA, Eller College of Management</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num">SIE</div>
+          <p class="stat__label">Securities Industry Essentials, FINRA certified</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num">$1.3M</div>
+          <p class="stat__label">Chapter budget directed as Vice President and Treasurer</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num">150+</div>
+          <p class="stat__label">Members served across 30 committees</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= THE DOORS ================= -->
+  <section class="rule-top">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Three ways in</h2>
+        <p>
+          A resume tells you whether I can do the job. These tell you whether you want
+          to work with me.
+        </p>
+      </div>
+
+      <div class="doors">
+        <a class="door" href="evolution.html">
+          <div class="door__num">01</div>
+          <div class="door__title">What the data said about me</div>
+          <p class="door__body">
+            I surveyed former supervisors and teammates and compared their answers to my own
+            self-assessment. The gap between the two was not the one I expected.
+          </p>
+          <span class="door__cue">The evolution</span>
+        </a>
+
+        <a class="door" href="portfolio.html">
+          <div class="door__num">02</div>
+          <div class="door__title">Work that survives a second look</div>
+          <p class="door__body">
+            Client communication strategy, capital markets research and a fund built from
+            nothing — with the reasoning behind each one, not just the artifact.
+          </p>
+          <span class="door__cue">The portfolio</span>
+        </a>
+
+        <a class="door" href="about.html">
+          <div class="door__num">03</div>
+          <div class="door__title">The short version, on paper</div>
+          <p class="door__body">
+            Biography and full resume — readable here, downloadable if you'd rather keep
+            a copy.
+          </p>
+          <span class="door__cue">About &amp; resume</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PULL QUOTE ================= -->
+  <section class="rule-top">
+    <div class="wrap split">
+      <blockquote class="pull">
+        <p>One day you'll have a client who loses forty percent in a year. You'll want someone on your team who already knows what that feels like.</p>
+        <cite>— From my professional persona video</cite>
+      </blockquote>
+      <div class="prose">
+        <h3>Why temperament, and not just numbers</h3>
+        <p>
+          Technical skill is table stakes in this industry and it is teachable. Composure
+          under a real loss is neither. I spent four years building toward one outcome,
+          lost it in a single afternoon, and spent the months afterward deciding what to do
+          with the capital I had left.
+        </p>
+        <p>
+          That is the same decision a client makes in a bad year, and it is the reason I
+          chose wealth management rather than a desk further from the people whose money
+          it is.
+        </p>
+        <a class="btn btn--ghost" href="evolution.html">Read the full arc</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Navigate</h4>
+        <a href="about.html">About &amp; Resume</a>
+        <a href="evolution.html">The Evolution</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <a href="https://www.linkedin.com/in/mickey-chapple" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div>
+        <h4>Reach me</h4>
+        <a href="mailto:mickeychapple@arizona.edu">mickeychapple@arizona.edu</a>
+        <a href="contact.html">Send a message</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <p>&copy; 2026 Mickey Chapple · Tucson, Arizona</p>
+      <p>Designed and coded by me · BCOM 314R</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

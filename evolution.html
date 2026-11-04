@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Evolution — Mickey Chapple</title>
+<meta name="description" content="I rated myself perfectly neutral. Nine people who have worked with me did not. What the gap between my self-perception and my reputation taught me.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__inner">
+    <a class="brand" href="index.html">Mickey Chapple <span>· Finance</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="evolution.html" aria-current="page">The Evolution</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">The Evolution · Identity, brand and reputation</p>
+      <h1 class="hero__lede">I rated myself a perfect zero. Nine people disagreed.</h1>
+      <p class="hero__sub">
+        This semester I ran two instruments on myself: one measuring how I see me, one
+        measuring how people who have actually worked with me see me. I expected them to
+        roughly agree. <strong>They were six points apart</strong>, and the distance between
+        them turned out to be the most useful thing I learned all year.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ THE INSTRUMENTS ============ -->
+  <section class="rule-top">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Two instruments, plain English</h2>
+        <p>
+          These are tools from my business communication coursework. If you have not seen
+          them before, here is what they actually measure.
+        </p>
+      </div>
+
+      <div class="doors">
+        <div class="door" style="cursor:default">
+          <div class="door__num">SPI</div>
+          <div class="door__title">Self-Perception Inventory</div>
+          <p class="door__body">
+            I rate my own behavior on two axes. <strong>Proactivity</strong> is how much I
+            push — do I assert, direct and initiate, or hold back and ask? <strong>Reactivity</strong>
+            is how much emotion I show — am I animated and expressive, or measured and contained?
+          </p>
+        </div>
+        <div class="door" style="cursor:default">
+          <div class="door__num">PRS</div>
+          <div class="door__title">Professional Reputation Survey</div>
+          <p class="door__body">
+            The identical questions, answered about me by nine former supervisors, teammates
+            and chapter officers — anonymously, so there was no incentive to be kind.
+            Same two axes, outside view.
+          </p>
+        </div>
+        <div class="door" style="cursor:default">
+          <div class="door__num">GAP</div>
+          <div class="door__title">Why the distance matters</div>
+          <p class="door__body">
+            Identity is who you believe you are. Reputation is who everyone else has already
+            decided you are. Only one of them walks into the room before you do — and it is
+            not the one you control.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE SCATTER ============ -->
+  <section class="rule-top">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Six points of daylight</h2>
+        <p>
+          Both instruments plot onto the same grid. Mine landed dead centre. Theirs did not.
+        </p>
+      </div>
+
+      <figure class="chart-frame">
+        <figcaption class="chart-frame__head">
+          <span class="chart-frame__title">Self-perception vs. reputation</span>
+          <span class="chart-frame__note">n = 9 respondents · scale &#8722;9 to +9</span>
+        </figcaption>
+
+        <div class="scatter-wrap">
+          <svg class="scatter" viewBox="0 0 540 540" role="img"
+               aria-label="A scatter plot with proactivity on the horizontal axis and reactivity on the vertical axis, divided into four quadrants: Amiable, Expressive, Analytical and Driver. Mickey's own self-rating sits at the exact centre, zero and zero. The nine-respondent average sits far to the right at 6.1 proactivity and 0.8 reactivity, inside the Expressive quadrant near the Driver boundary. An arrow spans the distance between the two.">
+
+            <!-- quadrant tints -->
+            <rect x="60"  y="60"  width="210" height="210" fill="#FDF2F5"></rect>
+            <rect x="270" y="60"  width="210" height="210" fill="#EEF6FC"></rect>
+            <rect x="60"  y="270" width="210" height="210" fill="#FBF8F0"></rect>
+            <rect x="270" y="270" width="210" height="210" fill="#F1F8F4"></rect>
+
+            <!-- grid -->
+            <g class="sc-grid">
+              <line x1="60" y1="130" x2="480" y2="130"></line>
+              <line x1="60" y1="200" x2="480" y2="200"></line>
+              <line x1="60" y1="340" x2="480" y2="340"></line>
+              <line x1="60" y1="410" x2="480" y2="410"></line>
+              <line x1="130" y1="60" x2="130" y2="480"></line>
+              <line x1="200" y1="60" x2="200" y2="480"></line>
+              <line x1="340" y1="60" x2="340" y2="480"></line>
+              <line x1="410" y1="60" x2="410" y2="480"></line>
+            </g>
+
+            <!-- frame + axes -->
+            <rect x="60" y="60" width="420" height="420" fill="none" stroke="#DCE6F1"></rect>
+            <line class="sc-axis" x1="60" y1="270" x2="480" y2="270"></line>
+            <line class="sc-axis" x1="270" y1="60" x2="270" y2="480"></line>
+
+            <!-- quadrant labels -->
+            <text class="sc-quad" x="72"  y="80"  text-anchor="start">AMIABLE</text>
+            <text class="sc-quad" x="468" y="80"  text-anchor="end">EXPRESSIVE</text>
+            <text class="sc-quad" x="72"  y="468" text-anchor="start">ANALYTICAL</text>
+            <text class="sc-quad" x="468" y="468" text-anchor="end">DRIVER</text>
+
+            <!-- axis titles -->
+            <text class="sc-axis-label" x="270" y="512" text-anchor="middle">PROACTIVITY &#8594;</text>
+            <text class="sc-axis-label" x="26" y="270" text-anchor="middle"
+                  transform="rotate(-90 26 270)">REACTIVITY &#8594;</text>
+
+            <!-- individual respondents -->
+            <g class="sc-resp">
+              <circle cx="340" cy="200"></circle>
+              <circle cx="433" cy="200"></circle>
+              <circle cx="387" cy="247"></circle>
+              <circle cx="433" cy="247"></circle>
+              <circle cx="387" cy="293"></circle>
+              <circle cx="433" cy="293"></circle>
+            </g>
+
+            <!-- the gap -->
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+                      markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#1168B8"></path>
+              </marker>
+            </defs>
+            <line class="sc-gap" x1="283" y1="267" x2="398" y2="253"
+                  marker-end="url(#arrow)"></line>
+            <text class="sc-gap-label" x="300" y="240">THE GAP</text>
+
+            <!-- self -->
+            <circle class="sc-self" cx="270" cy="270" r="8"></circle>
+            <text class="sc-tag sc-tag--self sc-long" x="262" y="300" text-anchor="end">HOW I SEE ME</text>
+            <text class="sc-tag sc-tag--self sc-short" x="262" y="300" text-anchor="end">ME</text>
+            <text class="sc-val sc-val--self" x="262" y="318" text-anchor="end">0.0 , 0.0</text>
+
+            <!-- average -->
+            <line class="sc-leader" x1="412" y1="178" x2="412" y2="240"></line>
+            <circle class="sc-avg" cx="412" cy="251" r="9"></circle>
+            <text class="sc-tag sc-tag--avg sc-long" x="412" y="168" text-anchor="middle">HOW THEY SEE ME</text>
+            <text class="sc-tag sc-tag--avg sc-short" x="412" y="168" text-anchor="middle">THEM</text>
+            <text class="sc-val sc-val--avg" x="412" y="148" text-anchor="middle">6.1 , 0.8</text>
+          </svg>
+        </div>
+
+        <div class="chart-legend">
+          <span class="legend--self"><i></i> My self-rating</span>
+          <span class="legend--avg"><i></i> Nine-respondent average</span>
+          <span class="legend--dot"><i></i> Individual respondents</span>
+        </div>
+      </figure>
+
+      <div class="stats" style="margin-top:28px">
+        <div class="stat">
+          <div class="stat__num">0.0</div>
+          <p class="stat__label">My own proactivity score. I called myself Balanced/Neutral.</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num">6.1</div>
+          <p class="stat__label">Theirs. Firmly Expressive, right on the Driver boundary.</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num">9</div>
+          <p class="stat__label">Respondents. Not one placed me at neutral.</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num">0 / 9</div>
+          <p class="stat__label">Who agreed with my own read of myself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT IT MEANS ============ -->
+  <section class="rule-top">
+    <div class="wrap split">
+      <div class="prose">
+        <h3>What a six-point gap actually says</h3>
+        <p>
+          I did not score myself modestly. I scored myself as having no particular tendency
+          in either direction — the statistical equivalent of saying <em>I'm just normal.</em>
+          Nine people independently reported something very different: that I push, I assert,
+          and I take up room.
+        </p>
+        <p>
+          The uncomfortable version of this finding is that I have been running an influence
+          I did not know I had. The useful version is that it is entirely fixable, because
+          the problem was never the behaviour — it was that I could not see it.
+        </p>
+        <h3>The comment that reframed it</h3>
+        <p>
+          One respondent put it more precisely than I could have:
+        </p>
+      </div>
+      <blockquote class="pull">
+        <p>I think Mickey may underestimate how much influence his opinion has. People look up to him and take his input seriously, so an offhand comment can shape how others think more than he realizes.</p>
+        <cite>— Professional Reputation Survey, anonymous</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ ADJECTIVES ============ -->
+  <section class="rule-top">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Words I claimed, words I earned</h2>
+        <p>
+          Respondents chose adjectives for me. I chose adjectives for myself. Sorting them
+          into what overlapped and what did not was more revealing than the scores.
+        </p>
+      </div>
+
+      <div class="adj-grid">
+        <div class="adj-col">
+          <h3 class="adj-col__head adj-col__head--both">We agreed on these</h3>
+          <p class="adj-col__note">Chosen by both me and my respondents — the stable core.</p>
+          <ul class="chips chips--both">
+            <li>Hard-Working</li><li>Driven</li><li>Leaderlike</li><li>Outgoing</li>
+            <li>Social</li><li>Curious</li><li>Empathetic</li>
+          </ul>
+        </div>
+
+        <div class="adj-col">
+          <h3 class="adj-col__head adj-col__head--them">They saw these. I didn't claim them.</h3>
+          <p class="adj-col__note">My blind spots — and notably, most of them are assets.</p>
+          <ul class="chips chips--them">
+            <li>Problem-Solver</li><li>Self-Confident</li><li>Good with Numbers</li>
+            <li>Growth-Oriented</li><li>Competitive</li><li>Well-Rounded</li>
+            <li>Idea-Generator</li><li>Even-Tempered</li><li>Poised</li><li>Calm</li>
+            <li>Well-Informed</li><li>Independent</li><li>Involved</li><li>Values Education</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p>
+          <strong>The pattern I missed:</strong> every adjective in that second column is one
+          I would have been glad to claim. I did not withhold them out of humility — I
+          genuinely did not know they were on the table. The same blindness that hid
+          <em>self-confident</em> from me also hid <em>take up room</em>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONSTRUCTIVE ============ -->
+  <section class="rule-top">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The feedback I didn't enjoy reading</h2>
+        <p>
+          Anonymous responses to "what could Mickey improve?" — reproduced without editing,
+          including the ones that stung.
+        </p>
+      </div>
+
+      <div class="quote-stack">
+        <blockquote class="qs">
+          <p>Mickey might not understand that others might perceive him to be confrontational. Which isn't necessarily a bad thing, but sometimes a softer way of bringing up a conversation is taken easier.</p>
+        </blockquote>
+        <blockquote class="qs">
+          <p>Mickey can be a little hard headed sometimes, but he means it in a good, leader like way.</p>
+        </blockquote>
+        <blockquote class="qs">
+          <p>I think Mickey can improve his time management when other people are involved. If he is doing something that involves other people, at times he can tend to do things on his own timing.</p>
+        </blockquote>
+        <blockquote class="qs">
+          <p>I personally think Mickey was made to be a leader — maybe something he can consider is being more open to EVERYONE'S opinion no matter who they are.</p>
+        </blockquote>
+      </div>
+
+      <div class="split" style="margin-top:44px">
+        <div class="prose">
+          <h3>Three changes, not three adjectives</h3>
+          <p>
+            Four people, with no knowledge of each other's answers, described one behaviour:
+            I arrive with a position already formed. So the response had to be behavioural,
+            not aspirational.
+          </p>
+          <ul>
+            <li><strong>Ask before I answer.</strong> In any group decision, I solicit two
+              other views before I give mine. If I speak first, I have removed the option
+              of disagreement from people who already defer to me.</li>
+            <li><strong>Label the confidence.</strong> I now say explicitly whether I am
+              thinking out loud or making a recommendation. Respondents could not tell the
+              difference, which meant a half-formed thought was landing as a verdict.</li>
+            <li><strong>Work on other people's clock.</strong> When a task involves anyone
+              else, their timeline sets the schedule, not mine.</li>
+          </ul>
+        </div>
+        <blockquote class="pull">
+          <p>Continue to be someone people trust for honest input. Your opinions are valued because you are thoughtful and respected within your team.</p>
+          <cite>— Reinforcing feedback, anonymous</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO ============ -->
+  <section class="rule-top">
+    <div class="wrap wrap--narrow">
+      <div class="sec-head">
+        <h2>The two-minute version</h2>
+        <p>
+          My professional persona video. Same story as the chart on the homepage, told in
+          the medium where the flat part at the bottom is something you feel rather than
+          read.
+        </p>
+      </div>
+
+      <div class="video">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/5kqMcRGnTIk"
+          title="Mickey Chapple — Professional Persona Video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORWARD ============ -->
+  <section class="rule-top">
+    <div class="wrap split">
+      <div class="prose">
+        <h3>Where the line goes next</h3>
+        <p>
+          The chart on my homepage stops at today, which is the only dishonest thing about
+          it. The recovery is not finished — it is simply the part I can show you evidence for.
+        </p>
+        <p>
+          What the data changed is how I intend to spend the next stretch. I came into this
+          semester believing my job was to be more assertive. I am leaving it understanding
+          that assertiveness was never my constraint — <strong>calibration</strong> was.
+          Knowing when the room needs my judgment and when it needs my silence is a harder
+          skill than having the judgment, and it is the one that separates an analyst who is
+          useful from one who is trusted.
+        </p>
+        <p>
+          That is the version of myself I am building toward, and it is the reason a client
+          conversation interests me more than a screen full of models ever has.
+        </p>
+        <div class="btn-row" style="margin-top:26px">
+          <a class="btn" href="portfolio.html">See the work</a>
+          <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+      <div class="prose">
+        <h3>What I'd want a manager to take from this</h3>
+        <ul>
+          <li>I will go looking for the feedback rather than waiting for the review cycle.</li>
+          <li>When it is unflattering, I publish it rather than bury it — this page is the proof.</li>
+          <li>I convert it into specific behaviour, not a resolution to "do better."</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Navigate</h4>
+        <a href="about.html">About &amp; Resume</a>
+        <a href="evolution.html">The Evolution</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <a href="https://www.linkedin.com/in/mickey-chapple" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div>
+        <h4>Reach me</h4>
+        <a href="mailto:mickeychapple@arizona.edu">mickeychapple@arizona.edu</a>
+        <a href="contact.html">Send a message</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <p>&copy; 2026 Mickey Chapple · Tucson, Arizona</p>
+      <p>Designed and coded by me · BCOM 314R</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
